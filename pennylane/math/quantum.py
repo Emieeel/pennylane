@@ -1125,3 +1125,5 @@ def _compute_max_entropy(density_matrix, base):
     maximum_entropy = qml.math.log(rank) / div_base
 
     return maximum_entropy
+
+

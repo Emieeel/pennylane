@@ -52,6 +52,7 @@ class ObservableReturnTypes(Enum):
     Shadow = "shadow"
     ShadowExpval = "shadowexpval"
     Purity = "purity"
+    FermionRDM = "fermionrdm"
 
     def __repr__(self):
         """String representation of the return types."""
@@ -105,6 +106,10 @@ from a classical shadow measurement"""
 
 Purity = ObservableReturnTypes.Purity
 """Enum: An enumeration which represents returning the purity of the system prior ot measurement."""
+
+FermionRDM = ObservableReturnTypes.FermionRDM
+"""Enum: An enumeration which represents returning the one- and two-particle
+reduced density matrix."""
 
 
 class MeasurementShapeError(ValueError):
